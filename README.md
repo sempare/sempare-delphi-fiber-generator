@@ -49,7 +49,7 @@ begin
   LGenerator.Producer := SeqProducer;
   // 1,2,3,1,2,3,1,2,3,1
   for i := 1 to 10 do
-    writeln(inttostr(G.Value));
+    writeln(inttostr(LGenerator.Value));
 end;
 ```
 
@@ -80,7 +80,7 @@ var
 begin
   LGenerator.Producer := FibonaciProducer;
   for i := 1 to 10 do
-    writeln(inttostr(G.Value));
+    writeln(inttostr(LGenerator.Value));
 end;
 ```
 
@@ -105,7 +105,7 @@ begin
   LGenerator.Producer := SeqProducer;
   LGenerator.EndAction := geaException;
   for i := 1 to 3 do
-    writeln(inttostr(G.Value));
+    writeln(inttostr(LGenerator.Value));
   try
         writeln(inttostr(G.Value)); // exception will be thrown
   except on e:Exception do
