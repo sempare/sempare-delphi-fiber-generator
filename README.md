@@ -103,10 +103,11 @@ var
   i: integer;
 begin
   LGenerator.Producer := SeqProducer;
+  LGenerator.EndAction := geaException;
   for i := 1 to 3 do
     writeln(inttostr(G.Value));
   try
-        writeln(inttostr(G.Value)); // exception should be thrown
+        writeln(inttostr(G.Value)); // exception will be thrown
   except on e:Exception do
         writeln('Exception was raised');
   end;
