@@ -107,7 +107,7 @@ begin
   for i := 1 to 3 do
     writeln(inttostr(LGenerator.Value));
   try
-        writeln(inttostr(G.Value)); // exception will be thrown
+        writeln(inttostr(LGenerator.Value)); // exception will be thrown
   except on e:Exception do
         writeln('Exception was raised');
   end;
