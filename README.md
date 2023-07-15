@@ -1,4 +1,4 @@
-# Sempare FiberGenerator
+# Sempare Fiber Generator Demo
 
 Copyright (C) 2022 Conrad Vermeulen, Sempare Limited
 
